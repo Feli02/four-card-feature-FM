@@ -27,20 +27,20 @@ body{
     font-weight: 200;
 }
 
-#main-title, .title-card{
+.main-title, .title-card{
     font-weight: 600;
 }
 
-#main-title, .title-card, .subtitle{
+.main-title, .title-card, .subtitle{
     color: var(--dark-blue);
 }
 
-#main-text, .text-card{
+.main-text, .text-card{
     font-weight: 400;
     color: var(--grayish-blue);
 }
 
-.subtitle, #main-title, #main-text{
+.subtitle, .main-title, .main-text{
     text-align: center;
 }
 
@@ -54,6 +54,7 @@ body{
     border-radius: 10px;
     box-shadow: 0px 15px 30px -11px rgb(131 166 210 / 50%);
     cursor: pointer;
+    max-width: 320px;
 }
 
 #card-supervisor{
@@ -79,7 +80,7 @@ img.icon-card {
     margin: 30px 10px 5px auto;
 }
 
-.subtitle, #main-title {
+.subtitle, .main-title {
     font-size: 24px;
 }
 
@@ -97,11 +98,11 @@ img.icon-card {
     font-size: 15px;
 }
 
-#main-title {
+.main-title {
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1000px){
+@media screen and (min-width: 720px) and (max-width: 1000px){
     #cards-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr) 0.1fr repeat(2, 1fr);
@@ -158,12 +159,12 @@ img.icon-card {
         grid-area: 3 / 7 / 6 / 9;
     }
 
-    #main-text {
+    .main-text {
         width: 45%;
         margin: auto;
     }
 
-    .subtitle, #main-title {
+    .subtitle, .main-title {
         font-size: 35px;
     }
 
