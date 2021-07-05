@@ -111,7 +111,7 @@ img.icon-card {
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 1020px){
+@media screen and (min-width: 720px) and (max-width: 1250px){
     #cards-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr) 0.1fr repeat(2, 1fr);
@@ -140,7 +140,7 @@ img.icon-card {
     }
 }
 
-@media (min-width: 1020px){
+@media (min-width: 1250px){
     #cards-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr) 0fr repeat(2, 1fr) 0.0fr repeat(2, 1fr);
@@ -148,6 +148,7 @@ img.icon-card {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: 1180px;
+        margin: auto;
     }
     
     .card{
