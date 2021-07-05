@@ -21,6 +21,7 @@ body{
     padding: 80px 30px;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .subtitle{
@@ -130,7 +131,7 @@ img.icon-card {
 @media (min-width: 1000px){
     #cards-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr) 0.2fr repeat(2, 1fr) 0.2fr repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) 0fr repeat(2, 1fr) 0.0fr repeat(2, 1fr);
         grid-template-rows: 0.2fr repeat(2, 1fr) 0.2fr repeat(2, 1fr) 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -140,6 +141,8 @@ img.icon-card {
         height: 250px;
         padding: 30px;
         transition: all 0.3s ease-in-out;
+        margin-bottom: 0;
+        justify-content: center;
     }
 
     img.icon-card{
@@ -148,15 +151,19 @@ img.icon-card {
 
     #card-supervisor { 
         grid-area: 3 / 1 / 6 / 3;
+        justify-self: end;
     }
     #card-teamBuilder { 
         grid-area: 1 / 4 / 4 / 6; 
+        justify-self: center;
     }
     #card-karma {  
         grid-area: 5 / 4 / 8 / 6; 
+        justify-self: center;
     }
     #card-calculator { 
         grid-area: 3 / 7 / 6 / 9;
+        justify-self: flex-start;
     }
 
     .main-text {
@@ -172,8 +179,10 @@ img.icon-card {
         transform: scale(1.1);
         transition: all 0.3s ease-in-out;
     }
+} 
+footer{
+    margin-top: 30px;
 }
-
 
 .attribution p{
     color: #3a015c;
