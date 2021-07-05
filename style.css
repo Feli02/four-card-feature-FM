@@ -103,16 +103,28 @@ img.icon-card {
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1000px){
+@media (max-width: 720px){
+    #cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1020px){
     #cards-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr) 0.1fr repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr) 0.1fr repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        min-width: 700px;
+        max-width: 750px;
+        margin: auto;
     }
     .card{
-        width: 100%
+        width: 100%;
+        justify-self: center;
     }
     #card-supervisor { 
         grid-area: 1 / 1 / 3 / 3; 
@@ -128,13 +140,14 @@ img.icon-card {
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1020px){
     #cards-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr) 0fr repeat(2, 1fr) 0.0fr repeat(2, 1fr);
         grid-template-rows: 0.2fr repeat(2, 1fr) 0.2fr repeat(2, 1fr) 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        width: 1180px;
     }
     
     .card{
